@@ -1,0 +1,16 @@
+model_info:
+  name: "Intelsat 901"
+  model_file: "intelsat_901_model.yaml"
+  brdf_file: "intelsat_901_brdf.yaml"
+  articulation_file: "intelsat_901_articulation.yaml"
+
+spice_config:
+  satellite_id: -126824
+  metakernel_path: "data/spice_kernels/missions/dst-is901/INTELSAT_901-metakernel.tm"
+  body_frame: "IS901_BUS_FRAME"
+
+simulation_defaults:
+  subdivision_level: 3
+  start_time: "2020-02-05T10:00:00"
+  end_time: "2020-02-05T16:00:00"
+  output_dir: "lightcurve_results_pytorch"

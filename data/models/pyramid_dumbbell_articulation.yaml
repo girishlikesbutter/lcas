@@ -1,0 +1,4 @@
+# Articulation rules for Pyramid Dumbbell components
+# No articulating components as requested
+
+articulation_rules: {}

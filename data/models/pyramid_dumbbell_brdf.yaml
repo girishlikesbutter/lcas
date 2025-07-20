@@ -1,0 +1,18 @@
+# BRDF material properties for Pyramid Dumbbell components
+# Using same parameters as Intelsat 901 solar panels as requested
+
+brdf_mappings:
+  Pyramid_1:
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+  Pyramid_2:
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+
+# Fallback material properties for unmapped components
+default_brdf:
+  r_d: 0.026
+  r_s: 0.3
+  n_phong: 200.0

@@ -1,0 +1,26 @@
+# PyTorch GPU Shadow Engine - Minimal Dependencies
+
+# Core scientific computing
+numpy>=1.20.0
+scipy>=1.7.0
+
+# PyTorch for GPU ray tracing
+torch>=1.9.0
+
+# 3D mesh processing and ray tracing
+trimesh>=3.10.0
+
+# SPICE toolkit for ephemeris
+spiceypy>=5.0.0
+
+# Quaternion operations
+numpy-quaternion>=2021.11.4.15.26.3
+
+# YAML for model loading
+pyyaml>=5.4.0
+
+# Plotting
+matplotlib>=3.5.0
+
+# Progress bars (optional)
+tqdm>=4.60.0

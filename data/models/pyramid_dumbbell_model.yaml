@@ -1,0 +1,151 @@
+!src.models.model_definitions.Satellite
+id: '-999999'
+name: Pyramid Dumbbell
+components:
+- !src.models.model_definitions.Component
+  id: PYR_1
+  name: Pyramid_1
+  conceptual_face_definitions:
+    # Square base at x=+2.5 (2.5m x 2.5m for >3 cubic meters) - outward facing normal
+    Pyramid1_Base:
+    - - 2.5
+      - -2.5
+      - -2.5
+    - - 2.5
+      - 2.5
+      - -2.5
+    - - 2.5
+      - 2.5
+      - 2.5
+    - - 2.5
+      - -2.5
+      - 2.5
+    # Four triangular faces connecting base to apex at x=0.01 - outward facing normals
+    Pyramid1_Face_Top:
+    - - 2.5
+      - -2.5
+      - 2.5
+    - - 0.01
+      - 0.0
+      - 0.0
+    - - 2.5
+      - 2.5
+      - 2.5
+    Pyramid1_Face_Bottom:
+    - - 2.5
+      - 2.5
+      - -2.5
+    - - 0.01
+      - 0.0
+      - 0.0
+    - - 2.5
+      - -2.5
+      - -2.5
+    Pyramid1_Face_Front:
+    - - 2.5
+      - -2.5
+      - -2.5
+    - - 0.01
+      - 0.0
+      - 0.0
+    - - 2.5
+      - -2.5
+      - 2.5
+    Pyramid1_Face_Back:
+    - - 2.5
+      - 2.5
+      - 2.5
+    - - 0.01
+      - 0.0
+      - 0.0
+    - - 2.5
+      - 2.5
+      - -2.5
+  relative_position: !numpy.ndarray
+  - 0.0
+  - 0.0
+  - 0.0
+  relative_orientation: !numpy.quaternion
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  articulation_rule: null
+  default_material: !src.models.model_definitions.BRDFMaterialProperties
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+- !src.models.model_definitions.Component
+  id: PYR_2
+  name: Pyramid_2
+  conceptual_face_definitions:
+    # Square base at x=-2.5 (7.5m x 7.5m - three times the size of Pyramid 1) - outward facing normal
+    Pyramid2_Base:
+    - - -2.5
+      - -3.75
+      - 3.75
+    - - -2.5
+      - 3.75
+      - 3.75
+    - - -2.5
+      - 3.75
+      - -3.75
+    - - -2.5
+      - -3.75
+      - -3.75
+    # Four triangular faces connecting base to apex at x=-0.01 - outward facing normals
+    Pyramid2_Face_Top:
+    - - -2.5
+      - -3.75
+      - 3.75
+    - - -0.01
+      - 0.0
+      - 0.0
+    - - -2.5
+      - 3.75
+      - 3.75
+    Pyramid2_Face_Bottom:
+    - - -2.5
+      - 3.75
+      - -3.75
+    - - -0.01
+      - 0.0
+      - 0.0
+    - - -2.5
+      - -3.75
+      - -3.75
+    Pyramid2_Face_Front:
+    - - -2.5
+      - -3.75
+      - -3.75
+    - - -0.01
+      - 0.0
+      - 0.0
+    - - -2.5
+      - -3.75
+      - 3.75
+    Pyramid2_Face_Back:
+    - - -2.5
+      - 3.75
+      - 3.75
+    - - -0.01
+      - 0.0
+      - 0.0
+    - - -2.5
+      - 3.75
+      - -3.75
+  relative_position: !numpy.ndarray
+  - 0.0
+  - 0.0
+  - 0.0
+  relative_orientation: !numpy.quaternion
+  - 1.0
+  - 0.0
+  - 0.0
+  - 0.0
+  articulation_rule: null
+  default_material: !src.models.model_definitions.BRDFMaterialProperties
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+body_frame_name: IS901_BUS_FRAME

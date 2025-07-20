@@ -1,0 +1,16 @@
+model_info:
+  name: "Pyramid Dumbbell"
+  model_file: "pyramid_dumbbell_model.yaml"
+  brdf_file: "pyramid_dumbbell_brdf.yaml"
+  articulation_file: "pyramid_dumbbell_articulation.yaml"
+
+spice_config:
+  satellite_id: -126824  # Use same as Intelsat 901
+  metakernel_path: "data/spice_kernels/missions/dst-is901/INTELSAT_901-metakernel.tm"
+  body_frame: "IS901_BUS_FRAME"  # Use same body frame as Intelsat 901
+
+simulation_defaults:
+  subdivision_level: 3
+  start_time: "2020-02-05T10:00:00"
+  end_time: "2020-02-05T16:00:00"
+  output_dir: "pyramid_dumbbell_results"

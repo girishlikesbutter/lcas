@@ -1,0 +1,20 @@
+# Articulation rules for Intelsat 901 components
+# These settings match the current hardcoded behavior
+
+articulation_rules:
+  Solar_Panel_North:
+    rule_type: "track_sun"
+    rotation_center: [0.0, 0.0, 0.0]  # In component local frame
+    rotation_axis: [0.0, 0.0, 1.0]    # Z-axis rotation
+    reference_normal: [1.0, 0.0, 0.0] # X-axis normal
+    limits:
+      min_angle: -180.0
+      max_angle: 180.0
+  Solar_Panel_South:
+    rule_type: "track_sun"
+    rotation_center: [0.0, 0.0, 0.0]
+    rotation_axis: [0.0, 0.0, 1.0]
+    reference_normal: [1.0, 0.0, 0.0]
+    limits:
+      min_angle: -180.0
+      max_angle: 180.0

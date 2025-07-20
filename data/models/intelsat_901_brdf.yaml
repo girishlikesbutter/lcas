@@ -1,0 +1,30 @@
+# BRDF material properties for Intelsat 901 components
+# These values match the current hardcoded values in generate_lightcurves_pytorch.py
+
+brdf_mappings:
+  Bus:
+    r_d: 0.02
+    r_s: 0.5
+    n_phong: 300.0
+  Solar_Panel_North:
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+  Solar_Panel_South:
+    r_d: 0.026
+    r_s: 0.3
+    n_phong: 200.0
+  Antenna_Dish_West:
+    r_d: 0.01
+    r_s: 0.4
+    n_phong: 200.0
+  Antenna_Dish_East:
+    r_d: 0.01
+    r_s: 0.4
+    n_phong: 200.0
+
+# Fallback material properties for unmapped components
+default_brdf:
+  r_d: 0.1
+  r_s: 0.1
+  n_phong: 10.0

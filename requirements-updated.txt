@@ -1,0 +1,36 @@
+# PyTorch GPU Shadow Engine - Dependencies
+# Updated with security fixes and missing dependencies
+
+# Core scientific computing
+numpy>=1.26.0,<2.0  # Pin to 1.x for compatibility
+scipy>=1.11.0
+
+# PyTorch for GPU acceleration
+# CRITICAL: Version 2.2.3+ required for CVE-2024-5480 fix
+torch>=2.2.3
+
+# 3D mesh processing and ray tracing
+trimesh>=4.0.0
+
+# SPICE toolkit for ephemeris
+spiceypy>=5.1.0
+
+# Quaternion operations
+numpy-quaternion>=2023.0.0
+
+# Configuration
+pyyaml>=6.0.1
+
+# Visualization
+matplotlib>=3.7.0
+imageio>=2.31.0  # Required for animation generation
+
+# Progress bars
+tqdm>=4.66.0
+
+# Optional: Development dependencies
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.5.0
