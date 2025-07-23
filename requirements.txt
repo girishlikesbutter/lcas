@@ -2,7 +2,6 @@
 
 # Core scientific computing
 numpy>=1.20.0
-scipy>=1.7.0
 
 # PyTorch for GPU ray tracing
 torch>=1.9.0
@@ -19,8 +18,11 @@ numpy-quaternion>=2021.11.4.15.26.3
 # YAML for model loading
 pyyaml>=5.4.0
 
-# Plotting
+# Plotting and visualization
 matplotlib>=3.5.0
 
-# Progress bars (optional)
+# Animation creation
+imageio>=2.31.0
+
+# Progress bars for data generation
 tqdm>=4.60.0
