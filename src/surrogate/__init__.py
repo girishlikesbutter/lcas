@@ -1,0 +1,1 @@
+# Surrogate modeling package for neural network-based satellite illumination prediction

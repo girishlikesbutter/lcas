@@ -43,6 +43,9 @@ Tasks are prefixed with numbers (01, 02, etc.) to show implementation order. See
 ### 04-data-generation-loop/ ✅ COMPLETED
 **Data Collection** - Completes the pipeline with progress tracking (tqdm) and CSV output (numpy.savetxt).
 
+### 05-surrogate-mlp-model/ ✅ COMPLETED
+**Neural Network Foundation** - Creates PyTorch MLP architecture for surrogate modeling with flexible configuration.
+
 ## Workflow
 
 1. **Create INITIAL file**: Define requirements in `INITIAL_<descriptive_name>.md`
