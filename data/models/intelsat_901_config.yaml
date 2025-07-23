@@ -1,8 +1,8 @@
 model_info:
   name: "Intelsat 901"
   model_file: "intelsat_901_model.yaml"
-  brdf_file: "intelsat_901_brdf.yaml"
-  articulation_file: "intelsat_901_articulation.yaml"
+  brdf_file: ""
+  articulation_file: ""
 
 spice_config:
   satellite_id: -126824
